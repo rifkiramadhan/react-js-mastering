@@ -30,6 +30,11 @@ const App = () => {
     },
   ];
 
+  const addExpenseHandler = (expenses) => {
+    console.log('In App.js');
+    console.log(expenses);
+  };
+
   // Menggukan Method React.CreateElement / Tidak menggukan JSX Code
   // return React.createElement(
   //   'div',
@@ -40,7 +45,7 @@ const App = () => {
 
   return (
     <div>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
     </div>
   );
