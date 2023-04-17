@@ -2,7 +2,7 @@ import React, { Fragment, useState } from 'react';
 import AddUser from './components/Users/AddUser';
 import UsersList from './components/Users/UsersList';
 
-function App() {
+const App = () => {
   const [usersList, setUsersList] = useState([]);
 
   const addUserHandler = (uName, uAge) => {
@@ -20,6 +20,6 @@ function App() {
       <UsersList users={usersList} />
     </Fragment>
   );
-}
+};
 
 export default App;
