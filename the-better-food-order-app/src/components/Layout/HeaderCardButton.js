@@ -20,9 +20,6 @@ const HeaderCardButton = (props) => {
   }`;
 
   useEffect(() => {
-    // if (cartCtx.items.length === 0) {
-    //   return;
-    // }
     if (items.length === 0) {
       return;
     }
