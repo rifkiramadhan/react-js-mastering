@@ -1,13 +1,13 @@
 import classes from './EventsList.module.css';
 
-function EventsList({ events }) {
+const EventsList = ({ events }) => {
   return (
     <div className={classes.events}>
       <h1>All Events</h1>
       <ul className={classes.list}>
         {events.map((event) => (
           <li key={event.id} className={classes.item}>
-            <a href="...">
+            <a href='...'>
               <img src={event.image} alt={event.title} />
               <div className={classes.content}>
                 <h2>{event.title}</h2>
@@ -19,6 +19,6 @@ function EventsList({ events }) {
       </ul>
     </div>
   );
-}
+};
 
 export default EventsList;
